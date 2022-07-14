@@ -14,21 +14,6 @@ function App() {
   const [toDos, setToDos] = useState([])
   const [toDo, setToDo] = useState('')
 
-  // const[data,dispatch]=useReducer(()=>{
-  //   const localdata = localStorage.getItem('toDos')
-  //   return localdata ? JSON.parse(localdata):[]
-  // })
-
-  // // setToDo()
-  // // useEffect(()=>{
-  // //   setToDos(JSON.parse(localStorage.getItem('todo')))
-  // // },[])
-
-
-  // useEffect(()=>{
-  //   localStorage.setItem('toDos',JSON.stringify(toDos))
-  // },[toDos]) 
-
 
 
 
