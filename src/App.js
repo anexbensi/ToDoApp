@@ -1,4 +1,4 @@
-import React, { useState , useEffect,useReducer} from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import store from "store";
 
 import './App.css';
@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
 
-  
+
 
 
   const [toDos, setToDos] = useState([])
@@ -66,7 +66,7 @@ function App() {
       <div className="input">
         <input type="text" value={toDo} onChange={(e) => setToDo(e.target.value)} placeholder="ADD TASK" />
         <i onClick={() => {
-          if (toDo === "" || toDo===" ") {
+          if (toDo === "" || toDo === " ") {
             alert("Field empty!")
           } else {
             setToDos([...toDos, { id: Date.now(), text: toDo, status: false }]); setToDo("")
@@ -134,6 +134,15 @@ function App() {
       <div className="footer mt-3">
         <button className="btn btn-danger" onClick={() => deleteall()}>Delete all Tasks</button>
       </div>
+      <br></br>
+      <div className="row">
+        <div ><center>
+          <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline googleBtn" href="#" onClick={()=>alert("coming soon..")}>
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" /> Signup Using Google</a></center>
+
+        </div>
+      </div>
+      <br></br>
 
 
     </div>

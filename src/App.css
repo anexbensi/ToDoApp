@@ -163,3 +163,14 @@ h2 {
   justify-content: center;
   
 }
+
+.googleBtn{
+  color: rgb(48, 59, 68);
+  background-color: white;
+  
+}
+.googleBtn:hover{
+  color:white ;
+  background-color: rgb(48, 59, 68);
+  
+}
